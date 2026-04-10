@@ -1,5 +1,4 @@
 Ce projet consiste à mettre en place un firewall Linux complet sous Ubuntu 22.04 en utilisant `iptables`.
-
 Le serveur agit comme une passerelle sécurisée (gateway) entre un réseau local (LAN) et Internet (WAN).
 Objectifs du projet :
 - Sécuriser un réseau local avec une politique restrictive
@@ -8,25 +7,6 @@ Objectifs du projet :
 - Configurer le **NAT (Masquerade)** pour l’accès Internet
 - Assurer la **persistance des règles firewall**
 - Journaliser les paquets bloqués
-
-Architecture réseau
-                    INTERNET
-                       │
-                       │ (WAN - ens33)
-            ┌──────────┴──────────┐
-            │   Firewall Ubuntu   │
-            │   IP: 192.168.1.1   │
-            │                     │
-            │  IP Forwarding ON  │
-            └──────────┬──────────┘
-                       │ (LAN - ens37)
-             192.168.1.0/24 réseau local
-                       │
-    ┌────────────┬────────────┬────────────┐
-    │            │            │            │
-
-Client 1     Client 2     Client 3     .......
-(Windows 7)   (Windows 10)
 
 ⚙️ Technologies utilisées
 
